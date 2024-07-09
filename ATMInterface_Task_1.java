@@ -142,7 +142,7 @@ class BankAccount {
 }
 
 
-public class ATM Interface_Task_1 {
+public class ATMInterface_Task_1 {
 	
 	
 	public static int takeIntegerInput(int limit) {
