@@ -10,7 +10,7 @@ class BankAccount {
 	int transactions = 0;
 	String transactionHistory = "";
 	
-	
+	// the above code block represents credentials of the user
 	
 	public void register() {
 		Scanner sc = new Scanner(System.in);
@@ -52,7 +52,7 @@ class BankAccount {
 	}
 	
 	public void withdraw() {
-		
+		//this for withdraw money
 		System.out.print("\nEnter amount to withdraw - ");
 		Scanner sc = new Scanner(System.in);
 		float amount = sc.nextFloat();
@@ -76,7 +76,7 @@ class BankAccount {
 	}
 	
 	public void deposit() {
-		
+		//this is for deposit money
 		System.out.print("\nEnter amount to deposit - ");
 		Scanner sc = new Scanner(System.in);
 		float amount = sc.nextFloat();
@@ -99,7 +99,7 @@ class BankAccount {
 	}
 	
 	public void transfer() {
-		
+		//this is for transferring money
 		Scanner sc = new Scanner(System.in);
 		System.out.print("\nEnter Receipent's Name - ");
 		String receipent = sc.nextLine();
@@ -128,10 +128,12 @@ class BankAccount {
 	}
 	
 	public void checkBalance() {
+		//this to check balance
 		System.out.println("\n" + balance + " Rs");
 	}
 	
 	public void transHistory() {
+		//this is to check transaction history
 		if ( transactions == 0 ) {
 			System.out.println("\nEmpty");
 		}
@@ -144,7 +146,7 @@ class BankAccount {
 
 public class AtmInterface {
 	
-	
+	//this is the atm interface
 	public static int takeIntegerInput(int limit) {
 		int input = 0;
 		boolean flag = false;
@@ -205,7 +207,7 @@ public class AtmInterface {
 								b.checkBalance();
 								break;
 								case 5:
-								b.transHistory();
+								b.transHistory();    
 								break;
 								case 6:
 								isFinished = true;
